@@ -1,4 +1,4 @@
-# Star Labs Theme ![alt text](https://cdn.shopify.com/s/files/1/2059/5897/files/Star_50x.png?v=1513954416 "Star Labs Systems")
+# Star Labs ![alt text](https://cdn.shopify.com/s/files/1/2059/5897/files/Star_50x.png?v=1513954416 "Star Labs Systems")
 Windows 10 Drivers for Star Labs laptops
 
 ## Setup
@@ -7,12 +7,6 @@ Windows 10 Drivers for Star Labs laptops
 * Extract the zip file
 * Each driver will have either; a **setup.exe** or an **install.bat**
 * Run this as Administrator
-
-## Lite
-##### Mk I
-[Audio](https://raw.githubusercontent.com/Sean-StarLabs/Drivers/main/Lite/Mk%20II/Audio.zip)
-
-
 
 ## Copying or Reusing
 
