@@ -1,5 +1,5 @@
-#/etc/udev/hwdb.d/21-kiox000a.hwdb:sensor
-modalias:acpi:KIOX000A*:dmi:*:*
+#/etc/udev/hwdb.d/21-kiox000a.hwdb
+sensor:modalias:acpi:KIOX000A*:dmi:*:*
 ACCEL_MOUNT_MATRIX=1, 0, 0; 0, -1, 0; 0, 0, 1;
 ACCEL_LOCATION=display
 #Then run
