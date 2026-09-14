@@ -7,18 +7,18 @@ model map.
 | System | SoC/platform | Driver directory | Notes |
 | --- | --- | --- | --- |
 | Star Lite Mk I | Legacy; SoC not verified | [`soc/intel/legacy/starlite-mki`](soc/intel/legacy/starlite-mki) | Retained historical packages. |
-| Star Lite Mk II | Apollo Lake | [`soc/intel/apollo-lake/starlite-mkii`](soc/intel/apollo-lake/starlite-mkii) | Includes the ticket-proven optional DPTF package. |
-| Star Lite Mk III | Gemini Lake | [`soc/intel/apollo-lake/starlite-mkii`](soc/intel/apollo-lake/starlite-mkii) | Uses the same verified package set as Mk II. |
-| Star Lite Mk IV | Gemini Lake Refresh | [`soc/intel/gemini-lake-refresh/starlite-mkiv`](soc/intel/gemini-lake-refresh/starlite-mkiv) | |
+| Star Lite Mk II | Apollo Lake | [`soc/intel/apollo-lake/common`](soc/intel/apollo-lake/common) | Includes the ticket-proven optional DPTF package. |
+| Star Lite Mk III | Gemini Lake | [`soc/intel/apollo-lake/common`](soc/intel/apollo-lake/common) | Uses the same verified package set as Mk II. |
+| Star Lite Mk IV | Gemini Lake Refresh | [`soc/intel/gemini-lake-refresh/common`](soc/intel/gemini-lake-refresh/common) | |
 | Star Lite Mk V | Alder Lake-N | [`soc/intel/alder-lake-n/common`](soc/intel/alder-lake-n/common) | Also use the shared ALC269 package below. |
 | Star LabTop Mk II | Legacy; SoC not verified | [`soc/intel/legacy/labtop-mkii`](soc/intel/legacy/labtop-mkii) | Retained historical package. |
-| Star LabTop Mk III | Kaby Lake | [`soc/intel/kaby-lake/labtop-mkiii`](soc/intel/kaby-lake/labtop-mkiii) | |
-| Star LabTop Mk IV | Comet Lake | [`soc/intel/comet-lake/labtop-mkiv`](soc/intel/comet-lake/labtop-mkiv) | |
+| Star LabTop Mk III | Kaby Lake | [`soc/intel/kaby-lake/common`](soc/intel/kaby-lake/common) | |
+| Star LabTop Mk IV | Comet Lake | [`soc/intel/comet-lake/common`](soc/intel/comet-lake/common) | |
 | Byte Mk II | Alder Lake | [`soc/intel/alder-lake/byte-mkii`](soc/intel/alder-lake/byte-mkii) | |
-| StarBook Mk V | Tiger Lake | [`soc/intel/tiger-lake/starbook-mkv`](soc/intel/tiger-lake/starbook-mkv) | Also use the shared ALC269 package below. |
+| StarBook Mk V | Tiger Lake | [`soc/intel/tiger-lake/common`](soc/intel/tiger-lake/common) | Also use the shared ALC269 package below. |
 | StarBook Mk VI Intel | Alder Lake | [`soc/intel/alder-lake/starbook-mkvi-intel`](soc/intel/alder-lake/starbook-mkvi-intel) | |
-| StarBook Mk VI AMD | AMD Cezanne | [`soc/amd/cezanne/starbook-mkvi-amd`](soc/amd/cezanne/starbook-mkvi-amd) | |
-| StarBook Mk VIr2 Intel | Raptor Lake | [`soc/intel/raptor-lake/starbook-mkvi-r2-intel`](soc/intel/raptor-lake/starbook-mkvi-r2-intel) | Recovered from the previously ticket-only package set. |
+| StarBook Mk VI AMD | AMD Cezanne | [`soc/amd/cezanne/common`](soc/amd/cezanne/common) | |
+| StarBook Mk VIr2 Intel | Raptor Lake | [`soc/intel/raptor-lake/common`](soc/intel/raptor-lake/common) | Recovered from the previously ticket-only package set. |
 | StarBook Horizon | Alder Lake | [`soc/intel/common`](soc/intel/common) | Use `realtek-audio-10034.zip` for the supported current ALC269 audio ID. |
 | StarBook Horizon Plus | Raptor Lake-U | [`soc/intel/common`](soc/intel/common) | Use `realtek-audio-10034.zip` for the supported current ALC269 audio ID. |
 | StarBook Mk VII N200 | Alder Lake-N | [`soc/intel/alder-lake-n/common`](soc/intel/alder-lake-n/common) | Also use the shared ALC269 package below. |
