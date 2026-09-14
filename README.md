@@ -1,19 +1,23 @@
-# Star Labs ![alt text](https://cdn.shopify.com/s/files/1/2059/5897/files/Star_50x.png?v=1513954416 "Star Labs Systems")
-Windows 10 Drivers for Star Labs laptops
+# Star Labs Windows drivers
 
-## Setup
-##### How to install
-* Download the drivers that you need
-* Extract the zip file
-* Each driver will have either; a **setup.exe** or an **install.bat**
-* Run this as Administrator
+Windows drivers are organised by processor platform under [`soc/`](soc/).
+Use [`MODELS.md`](MODELS.md) to select the exact directory for a Star Labs
+model. Do not select packages by a similarly named product generation.
 
-## Copying or Reusing
+Each ZIP is the vendor package and should be extracted before installation.
+Install the chipset package first where one is supplied, then install the
+remaining packages for the selected model. Audio packages may require manual
+selection from Device Manager when their installer does not bind the device.
 
-This project has mixed licencing. You are free to copy, redistribute and/or modify aspects of this work under the terms of each licence accordingly (unless otherwise specified).
+The repository keeps one copy of each identical payload. A model may therefore
+refer to a shared package in `soc/common/` or another platform directory; the
+mapping in `MODELS.md` is the supported source of truth.
 
-# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
-Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
+`soc/intel/legacy/` contains old systems for which the currently maintained
+firmware model map has no SoC identifier. Those packages are retained, but are
+not a basis for assigning a driver to a different model.
 
-View our full range of Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
-
+The Raptor Lake set was recovered from the historical, ticket-only StarBook
+Mk VIr2 package. Its Smart Sound Technology package is retained because the
+reported missing multimedia-audio controller needs it. Optional HSA and Intel
+Graphics Command Center applications are intentionally not included.
