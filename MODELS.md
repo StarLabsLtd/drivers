@@ -22,8 +22,8 @@ model map.
 | StarBook Horizon | Alder Lake | [`soc/intel/common`](soc/intel/common) | Use `realtek-audio-10034.zip` for the supported current ALC269 audio ID. |
 | StarBook Horizon Plus | Raptor Lake-U | [`soc/intel/common`](soc/intel/common) | Use `realtek-audio-10034.zip` for the supported current ALC269 audio ID. |
 | StarBook Mk VII N200 | Alder Lake-N | [`soc/intel/alder-lake-n/common`](soc/intel/alder-lake-n/common) | Also use the shared ALC269 package below. |
-| StarBook Mk VII Ultra 7 | Meteor Lake | [`soc/intel/meteor-lake/starbook-mkvii-ultra7`](soc/intel/meteor-lake/starbook-mkvii-ultra7) | |
-| StarFighter Mk II | Meteor Lake | [`Ultra 7 platform packages`](soc/intel/meteor-lake/starbook-mkvii-ultra7) and [`F2 audio`](soc/intel/meteor-lake/starfighter-mkii) | Use the Ultra 7 set except for audio. The F2 audio package supports its Windows legacy `2014:7017` policy; do not substitute the ALC269 current-ID package. |
+| StarBook Mk VII Ultra 7 | Meteor Lake | [`soc/intel/meteor-lake/common`](soc/intel/meteor-lake/common) and [`Ultra 7 audio`](soc/intel/meteor-lake/audio/starbook-mkvii-ultra7.zip) | Use the shared Meteor Lake package set and this audio package. |
+| StarFighter Mk II | Meteor Lake | [`soc/intel/meteor-lake/common`](soc/intel/meteor-lake/common) and [`F2 audio`](soc/intel/meteor-lake/audio/starfighter-mkii.zip) | Use the shared Meteor Lake package set and this audio package. It supports the Windows legacy `2014:7017` policy; do not substitute the ALC269 current-ID package. |
 
 ## Shared packages
 
