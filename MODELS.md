@@ -10,7 +10,7 @@ model map.
 | Star Lite Mk II | Apollo Lake | [`soc/intel/apollo-lake/common`](soc/intel/apollo-lake/common) | Includes the ticket-proven optional DPTF package. |
 | Star Lite Mk III | Gemini Lake | [`soc/intel/apollo-lake/common`](soc/intel/apollo-lake/common) | Uses the same verified package set as Mk II. |
 | Star Lite Mk IV | Gemini Lake Refresh | [`soc/intel/gemini-lake-refresh/common`](soc/intel/gemini-lake-refresh/common) | |
-| Star Lite Mk V | Alder Lake-N | [`soc/intel/alder-lake-n/common`](soc/intel/alder-lake-n/common) | Includes the Intel SST package for `PCI\\VEN_8086&DEV_54C8`; also use the shared ALC269 and GNA packages below when their IDs match. |
+| Star Lite Mk V | Alder Lake-N | [`soc/intel/alder-lake-n/common`](soc/intel/alder-lake-n/common) and the current [`2145:0002` audio package](soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip) | Includes the Intel SST package for `PCI\\VEN_8086&DEV_54C8`; also use the shared GNA package below when its ID matches. |
 | Star LabTop Mk II | Legacy; SoC not verified | [`soc/intel/legacy/labtop-mkii`](soc/intel/legacy/labtop-mkii) | Retained historical package. |
 | Star LabTop Mk III | Kaby Lake | [`soc/intel/kaby-lake/common`](soc/intel/kaby-lake/common) | |
 | Star LabTop Mk IV | Comet Lake | [`soc/intel/comet-lake/common`](soc/intel/comet-lake/common) | |
@@ -29,9 +29,9 @@ model map.
 
 | Package | Applicable systems |
 | --- | --- |
-| [`soc/intel/common/realtek-audio-alc269.zip`](soc/intel/common/realtek-audio-alc269.zip) | Star Lite Mk V, StarBook Mk V, and StarBook Mk VII N200. |
+| [`soc/intel/common/realtek-audio-alc269.zip`](soc/intel/common/realtek-audio-alc269.zip) | StarBook Mk V and StarBook Mk VII N200. |
 | [`soc/intel/common/intel-gna-3.05.00.1578.zip`](soc/intel/common/intel-gna-3.05.00.1578.zip) | Star Lite Mk V, StarBook Mk VII Ultra 7, and StarFighter Mk II when Device Manager reports `PCI\\VEN_8086&DEV_467E`. |
-| [`soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip`](soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip) | StarBook Horizon, Horizon Plus / Raptor Lake-U, and StarBook Mk VII Ultra 7 systems whose codec reports `HDAUDIO\\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_21450002`. |
+| [`soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip`](soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip) | Star Lite Mk V, StarBook Horizon, Horizon Plus / Raptor Lake-U, and StarBook Mk VII Ultra 7 systems whose codec reports `HDAUDIO\\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_21450002`. |
 | [`soc/common/goodix-fingerprint-reader.zip`](soc/common/goodix-fingerprint-reader.zip) | StarBook Mk VI Intel and AMD. |
 
 The Realtek 10034 package must not be used for the StarFighter MTL ALC235
