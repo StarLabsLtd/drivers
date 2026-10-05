@@ -15,7 +15,7 @@ model map.
 | Star LabTop Mk III | Kaby Lake | [`soc/intel/kaby-lake/common`](soc/intel/kaby-lake/common) | |
 | Star LabTop Mk IV | Comet Lake | [`soc/intel/comet-lake/common`](soc/intel/comet-lake/common) | |
 | Byte Mk II | Alder Lake | [`soc/intel/alder-lake/byte-mkii`](soc/intel/alder-lake/byte-mkii) | |
-| StarBook Mk V | Tiger Lake | [`soc/intel/tiger-lake/common`](soc/intel/tiger-lake/common) | Also use the shared ALC269 package below. |
+| StarBook Mk V | Tiger Lake | [`soc/intel/tiger-lake/common`](soc/intel/tiger-lake/common) and [`10ec:1200` audio](soc/intel/audio/10ec-1200/realtek-6.0.8928.1.zip) | Use this package when the legacy Audio Device ID option is selected. |
 | StarBook Mk VI Intel | Alder Lake | [`soc/intel/alder-lake/starbook-mkvi-intel`](soc/intel/alder-lake/starbook-mkvi-intel) | |
 | StarBook Mk VI AMD | AMD Cezanne | [`soc/amd/cezanne/common`](soc/amd/cezanne/common) | |
 | StarBook Mk VIr2 Intel | Raptor Lake | [`soc/intel/raptor-lake/common`](soc/intel/raptor-lake/common) | Recovered from the previously ticket-only package set. |
@@ -29,7 +29,8 @@ model map.
 
 | Package | Applicable systems |
 | --- | --- |
-| [`soc/intel/common/realtek-audio-alc269.zip`](soc/intel/common/realtek-audio-alc269.zip) | StarBook Mk V and StarBook Mk VII N200. |
+| [`soc/intel/common/realtek-audio-alc269.zip`](soc/intel/common/realtek-audio-alc269.zip) | StarBook Mk VII N200. |
+| [`soc/intel/audio/10ec-1200/realtek-6.0.8928.1.zip`](soc/intel/audio/10ec-1200/realtek-6.0.8928.1.zip) | StarBook Mk V with legacy Audio Device ID: it supports `HDAUDIO\\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10EC1200`. |
 | [`soc/intel/common/intel-gna-3.05.00.1578.zip`](soc/intel/common/intel-gna-3.05.00.1578.zip) | Star Lite Mk V, StarBook Mk VII Ultra 7, and StarFighter Mk II when Device Manager reports `PCI\\VEN_8086&DEV_467E`. |
 | [`soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip`](soc/intel/audio/2145-0002/realtek-6.0.10034.1.zip) | Star Lite Mk V, StarBook Horizon, Horizon Plus / Raptor Lake-U, and StarBook Mk VII Ultra 7 systems whose codec reports `HDAUDIO\\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_21450002`. |
 | [`soc/common/goodix-fingerprint-reader.zip`](soc/common/goodix-fingerprint-reader.zip) | StarBook Mk VI Intel and AMD. |
